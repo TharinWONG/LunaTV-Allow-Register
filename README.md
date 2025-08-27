@@ -4,7 +4,7 @@
   <img src="public/logo.png" alt="MoonTV Logo" width="120">
 </div>
 
-> 🎬 **LunaTV** 是一个开箱即用的、跨平台的影视聚合播放器。它基于 **Next.js 14** + **Tailwind&nbsp;CSS** + **TypeScript** 构建，支持多资源搜索、在线播放、收藏同步、播放记录、云端存储，让你可以随时随地畅享海量免费影视内容。
+> 🎬 **LunaTV** 是一個開箱即用的、跨平台的影視聚合播放器。它基於 **Next.js 14** + **Tailwind&nbsp;CSS** + **TypeScript** 構建，支持多資源搜索、在線播放、收藏同步、播放記錄、雲端存儲，讓你可以隨時隨地暢享海量免費影視內容。
 
 <div align="center">
 
@@ -20,54 +20,54 @@
 
 ## ✨ 功能特性
 
-- 🔍 **多源聚合搜索**：一次搜索立刻返回全源结果。
-- 📄 **丰富详情页**：支持剧集列表、演员、年份、简介等完整信息展示。
-- ▶️ **流畅在线播放**：集成 HLS.js & ArtPlayer。
-- ❤️ **收藏 + 继续观看**：支持 Kvrocks/Redis/Upstash 存储，多端同步进度。
-- 📱 **PWA**：离线缓存、安装到桌面/主屏，移动端原生体验。
-- 🌗 **响应式布局**：桌面侧边栏 + 移动底部导航，自适应各种屏幕尺寸。
-- 👿 **智能去广告**：自动跳过视频中的切片广告（实验性）。
+- 🔍 **多源聚合搜索**：一次搜索立刻返回全源結果。
+- 📄 **豐富詳情頁**：支持劇集列表、演員、年份、簡介等完整信息展示。
+- ▶️ **流暢在線播放**：集成 HLS.js & ArtPlayer。
+- ❤️ **收藏 + 繼續觀看**：支持 Kvrocks/Redis/Upstash 存儲，多端同步進度。
+- 📱 **PWA**：離線緩存、安裝到桌面/主屏，移動端原生體驗。
+- 🌗 **響應式佈局**：桌面側邊欄 + 移動底部導航，自適應各種屏幕尺寸。
+- 👿 **智能去廣告**：自動跳過視頻中的切片廣告（實驗性）。
 
-### 注意：部署后项目为空壳项目，无内置播放源和直播源，需要自行收集
+### 注意：部署後項目為空殼項目，無內置播放源和直播源，需要自行收集
 
 <details>
-  <summary>点击查看项目截图</summary>
-  <img src="public/screenshot1.png" alt="项目截图" style="max-width:600px">
-  <img src="public/screenshot2.png" alt="项目截图" style="max-width:600px">
-  <img src="public/screenshot3.png" alt="项目截图" style="max-width:600px">
+  <summary>點擊查看項目截圖</summary>
+  <img src="public/screenshot1.png" alt="項目截圖" style="max-width:600px">
+  <img src="public/screenshot2.png" alt="項目截圖" style="max-width:600px">
+  <img src="public/screenshot3.png" alt="項目截圖" style="max-width:600px">
 </details>
 
-### 请不要在 B站、小红书、微信公众号、抖音、今日头条或其他中国大陆社交平台发布视频或文章宣传本项目，不授权任何“科技周刊/月刊”类项目或站点收录本项目。
+### 請不要在 B站、小紅書、微信公眾號、抖音、今日頭條或其他中國大陸社交平台發佈視頻或文章宣傳本項目，不授權任何“科技週刊/月刊”類項目或站點收錄本項目。
 
-## 🗺 目录
+## 🗺 目錄
 
-- [技术栈](#技术栈)
+- [技術棧](#技術棧)
 - [部署](#部署)
 - [配置文件](#配置文件)
-- [自动更新](#自动更新)
-- [环境变量](#环境变量)
+- [自動更新](#自動更新)
+- [環境變量](#環境變量)
 - [AndroidTV 使用](#AndroidTV-使用)
 - [Roadmap](#roadmap)
-- [安全与隐私提醒](#安全与隐私提醒)
+- [安全與隱私提醒](#安全與隱私提醒)
 - [License](#license)
-- [致谢](#致谢)
+- [致謝](#致謝)
 
-## 技术栈
+## 技術棧
 
-| 分类      | 主要依赖                                                                                              |
+| 分類      | 主要依賴                                                                                              |
 | --------- | ----------------------------------------------------------------------------------------------------- |
 | 前端框架  | [Next.js 14](https://nextjs.org/) · App Router                                                        |
-| UI & 样式 | [Tailwind&nbsp;CSS 3](https://tailwindcss.com/)                                                       |
-| 语言      | TypeScript 4                                                                                          |
+| UI & 樣式 | [Tailwind&nbsp;CSS 3](https://tailwindcss.com/)                                                       |
+| 語言      | TypeScript 4                                                                                          |
 | 播放器    | [ArtPlayer](https://github.com/zhw2590582/ArtPlayer) · [HLS.js](https://github.com/video-dev/hls.js/) |
-| 代码质量  | ESLint · Prettier · Jest                                                                              |
+| 代碼質量  | ESLint · Prettier · Jest                                                                              |
 | 部署      | Docker                                                                    |
 
 ## 部署
 
-本项目**仅支持 Docker 或其他基于 Docker 的平台** 部署。
+本項目**僅支持 Docker 或其他基於 Docker 的平台** 部署。
 
-### Kvrocks 存储（強烈不推荐）
+### Kvrocks 存儲（強烈不推薦）
 
 ```yml
 services:
@@ -102,7 +102,7 @@ volumes:
   kvrocks-data:
 ```
 
-### Redis 存储（推荐）
+### Redis 存儲（推薦）
 
 ```yml
 services:
@@ -128,7 +128,7 @@ services:
     restart: unless-stopped
     networks:
       - moontv-network
-    # 请开启持久化，否则升级/重启后数据丢失
+    # 請開啓持久化，否則升級/重啓後數據丟失
     volumes:
       - ./data:/data
 networks:
@@ -136,10 +136,10 @@ networks:
     driver: bridge
 ```
 
-### Upstash 存储
+### Upstash 存儲
 
-1. 在 [upstash](https://upstash.com/) 注册账号并新建一个 Redis 实例，名称任意。
-2. 复制新数据库的 **HTTPS ENDPOINT 和 TOKEN**
+1. 在 [upstash](https://upstash.com/) 註冊賬號並新建一個 Redis 實例，名稱任意。
+2. 複製新數據庫的 **HTTPS ENDPOINT 和 TOKEN**
 3. 使用如下 docker compose
 ```yml
 services:
@@ -153,14 +153,14 @@ services:
       - USERNAME=admin
       - PASSWORD=admin_password
       - NEXT_PUBLIC_STORAGE_TYPE=upstash
-      - UPSTASH_URL=上面 https 开头的 HTTPS ENDPOINT
+      - UPSTASH_URL=上面 https 開頭的 HTTPS ENDPOINT
       - UPSTASH_TOKEN=上面的 TOKEN
       - NEXT_PUBLIC_ENABLE_REGISTER=true
 ```
 
 ## 配置文件
 
-完成部署后为空壳应用，无播放源，需要站长在管理后台的配置文件设置中填写配置文件（后续会支持订阅）
+完成部署後為空殼應用，無播放源，需要站長在管理後台的配置文件設置中填寫配置文件（後續會支持訂閲）
 
 配置文件示例如下：
 
@@ -170,125 +170,125 @@ services:
   "api_site": {
     "dyttzy": {
       "api": "http://xxx.com/api.php/provide/vod",
-      "name": "示例资源",
+      "name": "示例資源",
       "detail": "http://xxx.com"
     }
-    // ...更多站点
+    // ...更多站點
   },
   "custom_category": [
     {
-      "name": "华语",
+      "name": "華語",
       "type": "movie",
-      "query": "华语"
+      "query": "華語"
     }
   ]
 }
 ```
 
-- `cache_time`：接口缓存时间（秒）。
-- `api_site`：你可以增删或替换任何资源站，字段说明：
-  - `key`：唯一标识，保持小写字母/数字。
-  - `api`：资源站提供的 `vod` JSON API 根地址。
-  - `name`：在人机界面中展示的名称。
-  - `detail`：（可选）部分无法通过 API 获取剧集详情的站点，需要提供网页详情根 URL，用于爬取。
-- `custom_category`：自定义分类配置，用于在导航中添加个性化的影视分类。以 type + query 作为唯一标识。支持以下字段：
-  - `name`：分类显示名称（可选，如不提供则使用 query 作为显示名）
-  - `type`：分类类型，支持 `movie`（电影）或 `tv`（电视剧）
-  - `query`：搜索关键词，用于在豆瓣 API 中搜索相关内容
+- `cache_time`：接口緩存時間（秒）。
+- `api_site`：你可以增刪或替換任何資源站，字段説明：
+  - `key`：唯一標識，保持小寫字母/數字。
+  - `api`：資源站提供的 `vod` JSON API 根地址。
+  - `name`：在人機界面中展示的名稱。
+  - `detail`：（可選）部分無法通過 API 獲取劇集詳情的站點，需要提供網頁詳情根 URL，用於爬取。
+- `custom_category`：自定義分類配置，用於在導航中添加個性化的影視分類。以 type + query 作為唯一標識。支持以下字段：
+  - `name`：分類顯示名稱（可選，如不提供則使用 query 作為顯示名）
+  - `type`：分類類型，支持 `movie`（電影）或 `tv`（電視劇）
+  - `query`：搜索關鍵詞，用於在豆瓣 API 中搜索相關內容
 
-custom_category 支持的自定义分类已知如下：
+custom_category 支持的自定義分類已知如下：
 
-- movie：热门、最新、经典、豆瓣高分、冷门佳片、华语、欧美、韩国、日本、动作、喜剧、爱情、科幻、悬疑、恐怖、治愈
-- tv：热门、美剧、英剧、韩剧、日剧、国产剧、港剧、日本动画、综艺、纪录片
+- movie：熱門、最新、經典、豆瓣高分、冷門佳片、華語、歐美、韓國、日本、動作、喜劇、愛情、科幻、懸疑、恐怖、治癒
+- tv：熱門、美劇、英劇、韓劇、日劇、國產劇、港劇、日本動畫、綜藝、紀錄片
 
-也可输入如 "哈利波特" 效果等同于豆瓣搜索
+也可輸入如 "哈利波特" 效果等同於豆瓣搜索
 
-MoonTV 支持标准的苹果 CMS V10 API 格式。
+MoonTV 支持標準的蘋果 CMS V10 API 格式。
 
-## 自动更新
+## 自動更新
 
-可借助 [watchtower](https://github.com/containrrr/watchtower) 自动更新镜像容器
+可藉助 [watchtower](https://github.com/containrrr/watchtower) 自動更新鏡像容器
 
-dockge/komodo 等 docker compose UI 也有自动更新功能
+dockge/komodo 等 docker compose UI 也有自動更新功能
 
-## 环境变量
+## 環境變量
 
-| 变量                                | 说明                                         | 可选值                           | 默认值                                                                                                                     |
+| 變量                                | 説明                                         | 可選值                           | 默認值                                                                                                                     |
 | ----------------------------------- | -------------------------------------------- | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| USERNAME                            | 站长账号           | 任意字符串                       | 无默认，必填字段                                                                                                                     |
-| PASSWORD                            | 站长密码           | 任意字符串                       | 无默认，必填字段                                                                                                                     |
-| SITE_BASE                           | 站点 url              |       形如 https://example.com                  | 空                                                                                                                     |
-| NEXT_PUBLIC_SITE_NAME               | 站点名称                                     | 任意字符串                       | MoonTV                                                                                                                     |
-| ANNOUNCEMENT                        | 站点公告                                     | 任意字符串                       | 本网站仅提供影视信息搜索服务，所有内容均来自第三方网站。本站不存储任何视频资源，不对任何内容的准确性、合法性、完整性负责。 |
-| NEXT_PUBLIC_STORAGE_TYPE            | 播放记录/收藏的存储方式                      | redis、kvrocks、upstash | 无默认，必填字段                                                                                                               |
-| KVROCKS_URL                           | kvrocks 连接 url                               | 连接 url                         | 空                                                                                                                         |
-| REDIS_URL                           | redis 连接 url                               | 连接 url                         | 空                                                                                                                         |
-| UPSTASH_URL                         | upstash redis 连接 url                       | 连接 url                         | 空                                                                                                                         |
-| UPSTASH_TOKEN                       | upstash redis 连接 token                     | 连接 token                       | 空                                                                                                                         |
-| NEXT_PUBLIC_SEARCH_MAX_PAGE         | 搜索接口可拉取的最大页数                     | 1-50                             | 5                                                                                                                          |
-| NEXT_PUBLIC_DOUBAN_PROXY_TYPE       | 豆瓣数据源请求方式                           | 见下方                           | direct                                                                                                                     |
-| NEXT_PUBLIC_DOUBAN_PROXY            | 自定义豆瓣数据代理 URL                       | url prefix                       | (空)                                                                                                                       |
-| NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE | 豆瓣图片代理类型                             | 见下方                           | direct                                                                                                                     |
-| NEXT_PUBLIC_DOUBAN_IMAGE_PROXY      | 自定义豆瓣图片代理 URL                       | url prefix                       | (空)                                                                                                                       |
-| NEXT_PUBLIC_DISABLE_YELLOW_FILTER   | 关闭色情内容过滤                             | true/false                       | false                                                                                                                      |
-| NEXT_PUBLIC_FLUID_SEARCH | 是否开启搜索接口流式输出 | true/ false | true |
-| NEXT_PUBLIC_ENABLE_REGISTER         | 是否開放注冊，僅在非 localstorage 部署時生效 | true / false                     | false                                                                                                                      |
+| USERNAME                            | 站長賬號           | 任意字符串                       | 無默認，必填字段                                                                                                                     |
+| PASSWORD                            | 站長密碼           | 任意字符串                       | 無默認，必填字段                                                                                                                     |
+| SITE_BASE                           | 站點 url              |       形如 https://example.com                  | 空                                                                                                                     |
+| NEXT_PUBLIC_SITE_NAME               | 站點名稱                                     | 任意字符串                       | MoonTV                                                                                                                     |
+| ANNOUNCEMENT                        | 站點公告                                     | 任意字符串                       | 本網站僅提供影視信息搜索服務，所有內容均來自第三方網站。本站不存儲任何視頻資源，不對任何內容的準確性、合法性、完整性負責。 |
+| NEXT_PUBLIC_STORAGE_TYPE            | 播放記錄/收藏的存儲方式                      | redis、kvrocks、upstash | 無默認，必填字段                                                                                                               |
+| KVROCKS_URL                           | kvrocks 連接 url                               | 連接 url                         | 空                                                                                                                         |
+| REDIS_URL                           | redis 連接 url                               | 連接 url                         | 空                                                                                                                         |
+| UPSTASH_URL                         | upstash redis 連接 url                       | 連接 url                         | 空                                                                                                                         |
+| UPSTASH_TOKEN                       | upstash redis 連接 token                     | 連接 token                       | 空                                                                                                                         |
+| NEXT_PUBLIC_SEARCH_MAX_PAGE         | 搜索接口可拉取的最大頁數                     | 1-50                             | 5                                                                                                                          |
+| NEXT_PUBLIC_DOUBAN_PROXY_TYPE       | 豆瓣數據源請求方式                           | 見下方                           | direct                                                                                                                     |
+| NEXT_PUBLIC_DOUBAN_PROXY            | 自定義豆瓣數據代理 URL                       | url prefix                       | (空)                                                                                                                       |
+| NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE | 豆瓣圖片代理類型                             | 見下方                           | direct                                                                                                                     |
+| NEXT_PUBLIC_DOUBAN_IMAGE_PROXY      | 自定義豆瓣圖片代理 URL                       | url prefix                       | (空)                                                                                                                       |
+| NEXT_PUBLIC_DISABLE_YELLOW_FILTER   | 關閉色情內容過濾                             | true/false                       | false                                                                                                                      |
+| NEXT_PUBLIC_FLUID_SEARCH | 是否開啓搜索接口流式輸出 | true/ false | true |
+| NEXT_PUBLIC_ENABLE_REGISTER         | 是否開放註冊，僅在非 localstorage 部署時生效 | true / false                     | false                                                                                                                      |
 
-NEXT_PUBLIC_DOUBAN_PROXY_TYPE 选项解释：
+NEXT_PUBLIC_DOUBAN_PROXY_TYPE 選項解釋：
 
-- direct: 由服务器直接请求豆瓣源站
-- cors-proxy-zwei: 浏览器向 cors proxy 请求豆瓣数据，该 cors proxy 由 [Zwei](https://github.com/bestzwei) 搭建
-- cmliussss-cdn-tencent: 浏览器向豆瓣 CDN 请求数据，该 CDN 由 [CMLiussss](https://github.com/cmliu) 搭建，并由腾讯云 cdn 提供加速
-- cmliussss-cdn-ali: 浏览器向豆瓣 CDN 请求数据，该 CDN 由 [CMLiussss](https://github.com/cmliu) 搭建，并由阿里云 cdn 提供加速
-- custom: 用户自定义 proxy，由 NEXT_PUBLIC_DOUBAN_PROXY 定义
+- direct: 由服務器直接請求豆瓣源站
+- cors-proxy-zwei: 瀏覽器向 cors proxy 請求豆瓣數據，該 cors proxy 由 [Zwei](https://github.com/bestzwei) 搭建
+- cmliussss-cdn-tencent: 瀏覽器向豆瓣 CDN 請求數據，該 CDN 由 [CMLiussss](https://github.com/cmliu) 搭建，並由騰訊雲 cdn 提供加速
+- cmliussss-cdn-ali: 瀏覽器向豆瓣 CDN 請求數據，該 CDN 由 [CMLiussss](https://github.com/cmliu) 搭建，並由阿里雲 cdn 提供加速
+- custom: 用户自定義 proxy，由 NEXT_PUBLIC_DOUBAN_PROXY 定義
 
-NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE 选项解释：
+NEXT_PUBLIC_DOUBAN_IMAGE_PROXY_TYPE 選項解釋：
 
-- direct：由浏览器直接请求豆瓣分配的默认图片域名
-- server：由服务器代理请求豆瓣分配的默认图片域名
-- img3：由浏览器请求豆瓣官方的精品 cdn（阿里云）
-- cmliussss-cdn-tencent：由浏览器请求豆瓣 CDN，该 CDN 由 [CMLiussss](https://github.com/cmliu) 搭建，并由腾讯云 cdn 提供加速
-- cmliussss-cdn-ali：由浏览器请求豆瓣 CDN，该 CDN 由 [CMLiussss](https://github.com/cmliu) 搭建，并由阿里云 cdn 提供加速
-- custom: 用户自定义 proxy，由 NEXT_PUBLIC_DOUBAN_IMAGE_PROXY 定义
+- direct：由瀏覽器直接請求豆瓣分配的默認圖片域名
+- server：由服務器代理請求豆瓣分配的默認圖片域名
+- img3：由瀏覽器請求豆瓣官方的精品 cdn（阿里雲）
+- cmliussss-cdn-tencent：由瀏覽器請求豆瓣 CDN，該 CDN 由 [CMLiussss](https://github.com/cmliu) 搭建，並由騰訊雲 cdn 提供加速
+- cmliussss-cdn-ali：由瀏覽器請求豆瓣 CDN，該 CDN 由 [CMLiussss](https://github.com/cmliu) 搭建，並由阿里雲 cdn 提供加速
+- custom: 用户自定義 proxy，由 NEXT_PUBLIC_DOUBAN_IMAGE_PROXY 定義
 
 ## AndroidTV 使用
 
-目前该项目可以配合 [OrionTV](https://github.com/zimplexing/OrionTV) 在 Android TV 上使用，可以直接作为 OrionTV 后端
+目前該項目可以配合 [OrionTV](https://github.com/zimplexing/OrionTV) 在 Android TV 上使用，可以直接作為 OrionTV 後端
 
-已实现播放记录和网页端同步
+已實現播放記錄和網頁端同步
 
-## 安全与隐私提醒
+## 安全與隱私提醒
 
-### 请设置密码保护并关闭公网注册
+### 請設置密碼保護並關閉公網註冊
 
-为了您的安全和避免潜在的法律风险，我们要求在部署时**强烈建议关闭公网注册**：
+為了您的安全和避免潛在的法律風險，我們要求在部署時**強烈建議關閉公網註冊**：
 
 ### 部署要求
 
-1. **设置环境变量 `PASSWORD`**：为您的实例设置一个强密码
-2. **仅供个人使用**：请勿将您的实例链接公开分享或传播
-3. **遵守当地法律**：请确保您的使用行为符合当地法律法规
+1. **設置環境變量 `PASSWORD`**：為您的實例設置一個強密碼
+2. **僅供個人使用**：請勿將您的實例鏈接公開分享或傳播
+3. **遵守當地法律**：請確保您的使用行為符合當地法律法規
 
-### 重要声明
+### 重要聲明
 
-- 本项目仅供学习和个人使用
-- 请勿将部署的实例用于商业用途或公开服务
-- 如因公开分享导致的任何法律问题，用户需自行承担责任
-- 项目开发者不对用户的使用行为承担任何法律责任
-- 本项目不在中国大陆地区提供服务。如有该项目在向中国大陆地区提供服务，属个人行为。在该地区使用所产生的法律风险及责任，属于用户个人行为，与本项目无关，须自行承担全部责任。特此声明
+- 本項目僅供學習和個人使用
+- 請勿將部署的實例用於商業用途或公開服務
+- 如因公開分享導致的任何法律問題，用户需自行承擔責任
+- 項目開發者不對用户的使用行為承擔任何法律責任
+- 本項目不在中國大陸地區提供服務。如有該項目在向中國大陸地區提供服務，屬個人行為。在該地區使用所產生的法律風險及責任，屬於用户個人行為，與本項目無關，須自行承擔全部責任。特此聲明
 
 ## License
 
 [MIT](LICENSE) © 2025 MoonTV & Contributors
 
-## 致谢
+## 致謝
 
-- [ts-nextjs-tailwind-starter](https://github.com/theodorusclarence/ts-nextjs-tailwind-starter) — 项目最初基于该脚手架。
-- [LibreTV](https://github.com/LibreSpark/LibreTV) — 由此启发，站在巨人的肩膀上。
-- [ArtPlayer](https://github.com/zhw2590582/ArtPlayer) — 提供强大的网页视频播放器。
-- [HLS.js](https://github.com/video-dev/hls.js) — 实现 HLS 流媒体在浏览器中的播放支持。
-- [Zwei](https://github.com/bestzwei) — 提供获取豆瓣数据的 cors proxy
-- [CMLiussss](https://github.com/cmliu) — 提供豆瓣 CDN 服务
-- 感谢所有提供免费影视接口的站点。
+- [ts-nextjs-tailwind-starter](https://github.com/theodorusclarence/ts-nextjs-tailwind-starter) — 項目最初基於該腳手架。
+- [LibreTV](https://github.com/LibreSpark/LibreTV) — 由此啓發，站在巨人的肩膀上。
+- [ArtPlayer](https://github.com/zhw2590582/ArtPlayer) — 提供強大的網頁視頻播放器。
+- [HLS.js](https://github.com/video-dev/hls.js) — 實現 HLS 流媒體在瀏覽器中的播放支持。
+- [Zwei](https://github.com/bestzwei) — 提供獲取豆瓣數據的 cors proxy
+- [CMLiussss](https://github.com/cmliu) — 提供豆瓣 CDN 服務
+- 感謝所有提供免費影視接口的站點。
 
 
