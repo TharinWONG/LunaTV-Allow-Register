@@ -627,7 +627,7 @@ export const UserMenu: React.FC = () => {
           <div className='flex items-center justify-between mb-6'>
             <div className='flex items-center gap-3'>
               <h3 className='text-xl font-bold text-gray-800 dark:text-gray-200'>
-                本地设置
+                本地设置 (免费使用，若付费购买请联系商家退款)
               </h3>
               <button
                 onClick={handleResetSettings}
@@ -960,6 +960,7 @@ export const UserMenu: React.FC = () => {
           <div className='mt-6 pt-4 border-t border-gray-200 dark:border-gray-700'>
             <p className='text-xs text-gray-500 dark:text-gray-400 text-center'>
               这些设置保存在本地浏览器中
+            <span style="font-size:14px;">(免费使用，若付费购买请联系商家退款)</span>
             </p>
           </div>
         </div>
