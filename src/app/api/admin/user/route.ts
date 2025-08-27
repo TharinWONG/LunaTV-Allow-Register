@@ -473,17 +473,18 @@ export async function POST(request: NextRequest) {
                 { ok: true },
                 {
                     headers: {
-                        'Cache-Control': 'no-store', // 管理员配置不缓存
+                        'Cache-Control': 'no-store',
                     },
                 }
             );
-        } catch (error) {
-            console.error('用户管理操作失败:', error);
-            return NextResponse.json(
-                {
-                    error: '用户管理操作失败'
-                },
-                { status: 500 }
-            );
         }
+    } catch (error) {
+        console.error('用户管理操作失败:', error);
+        return NextResponse.json(
+            {
+                error: '用户管理操作失败'
+            },
+            { status: 500 }
+        );
     }
+}
