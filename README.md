@@ -67,7 +67,7 @@
 
 本项目**仅支持 Docker 或其他基于 Docker 的平台** 部署。
 
-### Kvrocks 存储（推荐）
+### Kvrocks 存储（強烈不推荐）
 
 ```yml
 services:
@@ -102,7 +102,7 @@ volumes:
   kvrocks-data:
 ```
 
-### Redis 存储（有一定的丢数据风险）
+### Redis 存储（推荐）
 
 ```yml
 services:
