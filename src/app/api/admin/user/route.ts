@@ -481,8 +481,7 @@ export async function POST(request: NextRequest) {
             console.error('用户管理操作失败:', error);
             return NextResponse.json(
                 {
-                    error: '用户管理操作失败',
-                    details: (error as Error).message,
+                    error: '用户管理操作失败'
                 },
                 { status: 500 }
             );
