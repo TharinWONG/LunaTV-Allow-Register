@@ -11,6 +11,19 @@ export interface ChangelogEntry {
 
 export const changelog: ChangelogEntry[] = [
   {
+    version: "社区完整免费版",
+    date: "2025-08-27",
+    added: [
+      "重新把註冊功能添加"
+    ],
+    changed: [
+      // 无修复内容
+    ],
+    fixed: [
+      // 无修复内容
+    ]
+  },
+  {
     version: "100.0.0",
     date: "2025-08-26",
     added: [
