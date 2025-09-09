@@ -1,4 +1,5 @@
 # LunaTV
+## 該項目復原原作者編寫的註冊功能
 
 <div align="center">
   <img src="public/logo.png" alt="MoonTV Logo" width="120">
